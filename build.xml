@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<project name="SwitchWindowMode" default="dist" basedir=".">
+    <property file="application.properties"/>
+    <property name="src" value="src"/>
+    <property name="temp" value="temp"/>
+    <property name="dist"  value="dist"/>
+    
+    <target name="dist" description="generate the distribution" >
+        <mkdir dir="${temp}"/>
+        
+        <copy todir="${temp}">
+            <fileset dir="${src}" />
+        </copy>
+        
+        <replace file="${temp}/install.rdf" token="${app.version.number}" value="${version.number}" />
+        <replace file="${temp}/chrome/tabtoggle/content/about.xul" token="${app.version.number}" value="${version.number}" />
+        
+        <mkdir dir="${dist}"/>
+        <zip destfile="${dist}/${filename}" basedir="${temp}" />
+        <delete dir="${temp}"/>
+    </target>
+
+    <target name="clean" description="clean up">
+        <delete dir="${temp}"/>
+        <delete dir="${dist}"/>
+    </target>
+</project>

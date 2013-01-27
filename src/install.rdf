@@ -3,26 +3,26 @@
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
-	<Description about="urn:mozilla:install-manifest">
+    <Description about="urn:mozilla:install-manifest">
 
-		<em:id>tabtoggle@pete-b.co.uk</em:id>
-		<em:name>Switch Window Mode</em:name>
-		<em:version>0.7</em:version>
-		<em:description>Switches between multiple and single window mode.</em:description>
-		<em:creator>Peter Bonnett</em:creator>
-		<em:homepageURL>http://www.pete-b.co.uk/downloads</em:homepageURL>
-		<em:iconURL>chrome://tabtoggle/skin/tabtoggle.png</em:iconURL>
-		<em:aboutURL>chrome://tabtoggle/content/about.xul</em:aboutURL>
+        <em:id>tabtoggle@pete-b.co.uk</em:id>
+        <em:name>Switch Window Mode</em:name>
+        <em:version>${app.version.number}</em:version>
+        <em:description>Switches between multiple and single window mode.</em:description>
+        <em:creator>Peter Bonnett</em:creator>
+        <em:homepageURL>http://www.pete-b.co.uk/downloads</em:homepageURL>
+        <em:iconURL>chrome://tabtoggle/skin/tabtoggle.png</em:iconURL>
+        <em:aboutURL>chrome://tabtoggle/content/about.xul</em:aboutURL>
 
-		<em:targetApplication>
-			<Description>
-				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-				<em:minVersion>1.5</em:minVersion>
-				<em:maxVersion>5.*</em:maxVersion>
-				<em:type>2</em:type>
-			</Description>
-		</em:targetApplication>
+        <em:targetApplication>
+            <Description>
+                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+                <em:minVersion>1.5</em:minVersion>
+                <em:maxVersion>5.*</em:maxVersion>
+                <em:type>2</em:type>
+            </Description>
+        </em:targetApplication>
 
-	</Description>
+    </Description>
 
 </RDF>

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 <window class="dialog"
-	title="Tab Toggle - About"
-	orient="vertical"
-	autostretch="always"
-	onload="sizeToContent()"
-	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    title="Tab Toggle - About"
+    orient="vertical"
+    autostretch="always"
+    onload="sizeToContent()"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
 <!-- Original template by Jed Brown -->
 
 <groupbox align="center" orient="horizontal">
 <vbox>
   <text value="Switch Window Mode" style="font-weight: bold; font-size: x-large;"/>
-  <text value="ver. 0.7"/>
+  <text value="ver. ${app.version.number}"/>
   <separator class="thin"/>
   <text value="Created By:" style="font-weight: bold;"/>
   <text value="Pete B" class="url"
