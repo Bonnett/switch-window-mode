@@ -1,4 +1,4 @@
-TabToggle
+Switch Window Mode
 =========
 
-TabToggle - Firefox Extension to switch tab modes
+Switch Window Mode - Firefox Extension to switch tab modes

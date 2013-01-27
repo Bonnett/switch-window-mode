@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://tabtoggle/skin/tabtoggle.css" type="text/css"?>
+
+<overlay id="tabtoggleOverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+// This imports our javascript.
+
+<script type="application/x-javascript" src="chrome://tabtoggle/content/tabtoggleOverlay.js">
+
+</script>
+
+
+// This is for the Tools menu.
+
+<menupopup id="menu_ToolsPopup">
+	<menuitem id="tabtoggle_setting" insertafter="devToolsSeparator" checked="false" type="radio" label="Multiple Window Mode"
+	accesskey="M" oncommand="uk.co.pete_b.tabtoggle.toggleValue();" />	
+</menupopup>
+
+// Toolbar button
+
+<toolbarpalette id="BrowserToolbarPalette">
+  <toolbarbutton class="toolbarbutton-1" id="btn_tabtoggle" disabled="false"
+      label="Window Mode" tooltiptext="Change Window Mode" orient="horizontal" oncommand="uk.co.pete_b.tabtoggle.toggleValue();">
+  </toolbarbutton>
+</toolbarpalette>
+</overlay>
